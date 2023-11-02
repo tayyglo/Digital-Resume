@@ -32,8 +32,9 @@ with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
+with open(cv_file, "rb") as pdf_file2:
+    PDFbyte2 = pdf_file2.read()
 profile_pic = Image.open(profile_pic)
-
 
 # ---- HERO SECTION ---- #
 col1, col2 = st.columns(2, gap="small")
@@ -47,6 +48,12 @@ with col2:
         label="📄 Download Resume",
         data=PDFbyte,
         file_name=resume_file.name,
+        mime="application/octet-stream",
+    )
+    st.download_button(
+        label="📄 Download CV",
+        data=PDFbyte2,
+        file_name=cv_file.name,
         mime="application/octet-stream",
     )
     st.write("📬",EMAIL)
