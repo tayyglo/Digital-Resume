@@ -1,6 +1,6 @@
 .appview-container.st-emotion-cache-1wrcr25.ea3mdgi6  {
-    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
-    background-size:cover;
+    background-image: url("https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg");
+    background-size: cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;
 
@@ -24,7 +24,8 @@ from { background-position: top;background-size:3000px; }
 to { background-position: -100px 0px;background-size:2750px;}
 }
 
-* { font-family: Georgia, 'Times New Roman', Times, serif; }
+* { font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(133, 228, 133); }
 
 h1 { font-size: 25px; }
 
@@ -66,8 +67,6 @@ p {
 #MainMenu { visibility: hidden;}
 header { visibility: hidden;}
 footer { visibility: hidden;}
-
-
 
 /* Entire Page */
 .main.st-emotion-cache-uf99v8.ea3mdgi5{
